@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+#body{
+    width: 90%;    
+}
+
+#h1{
+    font-size: 48px;
+    line-height: 60px;
+    color:whitesmoke;
+  }
+  
+  #h2{
+    font-size: 40px;
+    line-height: 55px;
+    color: whitesmoke;
+  }
+  
+#h3{
+    font-size: 32px;
+    color: whitesmoke;
+  }
+  
+#h4{
+    font-size: 22px;
+    color:whitesmoke;
+}
+  
+#h5{
+    font-size: 16px;
+    color: rgb(53, 51, 51);
+}
+  
+  
+#p{
+    font-size: 16px;
+    color: rgb(31, 25, 25);
+    margin: 15px 0 20px 0;
+  }
+
+.navbar1{
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+    background: #E3E6F3;
+    width: 100%;
+}
+
+.logo{
+    width:40%;
+    height: 40%;
+}
+
+.navlogo p{
+    color: rgb(82, 80, 80);
+    font-size: 25px;
+    font-weight:400;
+}
+
+.navmenu1{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.navmenu1 li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    cursor: pointer;
+    position: relative;
+}
+
+.navmenu1 li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+.navbar1 li a:hover,
+.navbar1 li a.active{
+    color: #088178;
+}
+
+.navbar1 li a.active::after,
+.navbar1 li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+.navlogincart{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.navlogincart button{
+    width: 157px;
+    height: 58px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+}
+
+.navlogincart button:active{
+    background: #f3f3f3;
+}
+
+.navcartcount{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: red;
+    color: white;
+}
+
+/* section details */
+
+.section-p1{
+    padding: 40px 80px;
+  }
+  
+  .section-m1{
+    margin: 40px 0;
+  }
+
+/* hero */
+
+  #hero{
+    background-image: url("imgs/hero_background.jpeg");
+    height: 70vh;
+    width: auto;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+/* pro-container */
+#featured{
+  text-align: center;
+}
+
+#featured .pro{
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #E3E6F3;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  /*box-shadow: 20px 20px 30px rgb(212, 206, 206);*/
+}
+
+#featured .pro:hover{
+  box-shadow: 20px 20px 30px rgb(212, 206, 206);
+}
+
+#featured .pro-container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+#featured .pro img{
+  width: 100%;
+}
+
+#featured .pro span{
+  color: rgb(119, 116, 116);
+  font-size: 12px;
+}
+
+#featured .pro .desc{
+  font-size: 14px;
+  text-align: start;
+  padding: 10px;
+}
+
+#featured .pro i{
+  color: rgb(255, 217, 0);
+}
+
+#featured .pro .cart{
+ width: 40px;
+ height: 40px;
+ line-height: 40px;
+ border-radius: 50px;
+ color: orangered;
+ position: absolute;
+ bottom: 20px;
+ right: 20px;
+}
+
+/* main container for products */
+
+.main_container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    padding: 75px;
+  }
+
+  .product{
+    box-shadow: 0px 7px 7px rgba(0,0,0,0.1);
+    border-radius: 10px;
+  }
+
+  .product img{
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+
+  .product_desc{
+    text-align: center;
+    padding: 20px 0px;
+  }
+
+  .product_desc h3{
+    font-size: 24px;
+    padding: 10px 0px;
+  }
+
+  .product_desc p{
+    font-size: 18px;
+  }
+
+  .checked{
+    color: orange;
+  }
+
+  /* breadrumbs */
+
+  .breadcrumbs{
+      padding-left: 20px;
+      padding-top: 20px;
+  }
